@@ -1,0 +1,126 @@
+body{
+    margin: 0px;
+    background-color:#b4fe98 ;
+    height: 100vh;
+}
+nav{
+    background-color: #FBF46D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 10px 2px 10px;
+}
+.Logo_img{
+    height: 64px;
+}
+.Menu_img{
+    height: 64px;
+    z-index: 2;
+}
+.Close_button{
+    display: none;
+    z-index: 2;
+}
+.Opciones_ul{
+    display: none;
+    justify-content: space-evenly; align-items: center;
+}
+.Opciones_li{
+    list-style: none;
+    margin: 3px;
+    font-size: 64px;
+    font-family: fantasy;
+}
+a{
+    text-decoration: none;
+}
+.active{
+    display: flex;
+    transform: translateX(0%);
+    
+}
+.second_active{
+    flex-direction: column;
+    background-color: #998cbe;
+    height: 100vh;
+    position: fixed;
+    bottom: 0px;
+    top: -16px;
+    right: 0px;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(0%);
+    transition: all 0s;
+    display: flex;
+}
+.unactive{
+    display: none;
+    transform: translateX(0%);
+}
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position:sticky;
+}
+main{
+    margin: 15px;
+    display:grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+.Dia_div{
+    display: flex;
+    justify-content: center; align-items: center;
+    flex-direction: column;
+}
+footer{
+    background-color: #FBF46D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.Eslogan_div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Eslogan_p{
+    font-family:monospace;
+}
+.Redes_div{
+    display: flex;
+    justify-content: space-between;
+}
+.Redes_img{
+    height: 35px;
+    margin: 5px;
+}
+@media screen and (min-width:160.8mm){
+    .Opciones_ul{
+        display: flex;
+        transform: translateX(0%);
+        justify-content: space-evenly; align-items: center;
+    }
+    .Menu_div{
+        display: flex;
+        transform: translateX(0%);
+        justify-content: space-evenly; align-items: center;
+    }
+    .Opciones_li{
+        font-size: 16px;
+    }
+    .Menu_img{
+        display: none;
+    }
+    .Datos_div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 50px;
+    }
+    
+}
