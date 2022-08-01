@@ -30,6 +30,8 @@ nav{
     margin: 3px;
     font-size: 64px;
     font-family: fantasy;
+    margin-left: 10px;
+
 }
 a{
     text-decoration: none;
@@ -121,6 +123,17 @@ footer{
         flex-direction: row;
         justify-content: space-around;
         margin: 50px;
+    }
+    
+}
+@media screen and (max-width:400px){
+    main{
+        margin: 15px;
+        display:grid;
+        grid-template-columns: repeat(2, 50%);
+        justify-content: center;
+        align-items: center;
+        height: 90%;
     }
     
 }
